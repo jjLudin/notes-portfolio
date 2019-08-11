@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import NavBar from './components/navbar';
 import Home from './components/home';
+import Notes from './components/notes';
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Fragment>
           <NavBar></NavBar>
           <Route path="/" exact component={Home}></Route>
+          <Route path="/notes" exact component={Notes}></Route>
         </Fragment>
       </Router>
     </div>
