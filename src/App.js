@@ -4,6 +4,7 @@ import NavBar from './components/navbar';
 import Home from './components/home';
 import Notes from './components/notes';
 import Contact from './components/contact';
+import About from './components/about';
 import './App.css';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/home" component={Home}></Route>
           <Route path="/notes" component={Notes}></Route>
           <Route path="/contact" component={Contact}></Route>
+          <Route path="/about" component={About}></Route>
       </HashRouter>
     </div>
   );
