@@ -12,6 +12,7 @@ class NavBar extends Component {
             <Nav className="mr-auto">
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="#notes">Notes</Nav.Link>
+              <Nav.Link href="#contact">Contact</Nav.Link>
             </Nav>
             <Form inline>
               <FormControl type="text" placeholder="Search" className="mr-sm-2"/>
