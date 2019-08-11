@@ -6,7 +6,7 @@ class NavBar extends Component {
     return(
       <div className="NavBar">
         <Navbar bg="dark" variant="dark" expand="lg">
-          <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand>
+          <Navbar.Brand href="/">Portfolio</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav"/>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
