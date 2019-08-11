@@ -1,7 +1,8 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { HashRouter, Route } from "react-router-dom";
 import NavBar from './components/navbar';
 import Home from './components/home';
+import Notes from './components/notes';
 import './App.css';
 
 function App() {
@@ -14,10 +15,10 @@ function App() {
         crossorigin="anonymous"
       />
       <HashRouter>
-        <Fragment>
           <NavBar></NavBar>
           <Route exact path="/" component={Home}></Route>
-        </Fragment>
+          <Route path="/home" component={Home}></Route>
+          <Route path="/notes" component={Notes}></Route>
       </HashRouter>
     </div>
   );
