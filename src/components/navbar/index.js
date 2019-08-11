@@ -13,6 +13,7 @@ class NavBar extends Component {
               <Nav.Link active={false} href="#home">Home</Nav.Link>
               <Nav.Link active={false} href="#notes">Notes</Nav.Link>
               <Nav.Link active={false} href="#contact">Contact</Nav.Link>
+              <Nav.Link active={false} href="#about">About</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
