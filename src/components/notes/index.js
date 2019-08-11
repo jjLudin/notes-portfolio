@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Table, Form, Button } from 'react-bootstrap';
+import notes from './notes';
 
 class Notes extends Component {
   render() {
@@ -32,48 +33,28 @@ class Notes extends Component {
             <Table striped bordered hover>
               <thead>
                 <tr>
-                  <th>#</th>
-                  <th>First Name</th>
-                  <th>Last Name</th>
-                  <th>Username</th>
+                  <th>Author</th>
+                  <th>Year</th>
+                  <th>Title</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Harry</td>
-                  <td>Potter</td>
-                  <td>@twitter</td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>John</td>
-                  <td>Picard</td>
-                  <td>@me</td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>Billy</td>
-                  <td>Bob</td>
-                  <td>@spider</td>
-                </tr>
+                {notes.map(this.renderNote)}
               </tbody>
             </Table>
           </Row>
         </Container>
       </div>
+    );
+  }
+
+  renderNote(note, index) {
+    return(
+      <tr key={index}>
+        <td>{note.author}</td>
+        <td>{note.year}</td>
+        <td><a href={note.link}>{note.title}</a></td>
+      </tr>
     );
   }
 }
