@@ -1,4 +1,4 @@
-# notes-portfolio
+# Portfolio for notes
 
 A React app that contains a list of notes for personal studies
 
