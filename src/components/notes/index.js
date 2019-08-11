@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Table } from 'react-bootstrap';
+import { Container, Row, Table, Form, Button } from 'react-bootstrap';
 
 class Notes extends Component {
   render() {
@@ -20,6 +20,14 @@ class Notes extends Component {
             </p>
           </Row>
 
+          <Row>
+            <Form inline>
+              <Form.Control type="text" placeholder="Search" className="mr-sm-2"/>
+              <Button variant="outline-success">Search</Button>
+            </Form>
+          </Row>
+
+          <br></br>
           <Row>
             <Table striped bordered hover>
               <thead>
