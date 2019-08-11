@@ -2,6 +2,8 @@
 
 A React app that contains a list of notes for personal studies
 
+https://notes-portfolio.herokuapp.com/#/
+
 ## Available Scripts
 
 In the project directory, you can run:
